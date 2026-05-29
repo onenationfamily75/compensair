@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claimora Flight Refunds – Get Compensated Fast</title>
+<meta name="description" content="Claimora helps passengers claim flight refunds and compensation for delays, cancellations, missed connections, denied boarding, and baggage issues worldwide.">
+<meta name="keywords" content="flight refund, flight compensation, delayed flight refund, cancelled flight compensation, EU261, passenger rights">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,900;1,300&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A1628;--navy2:#0F1E38;--blue:#1A56DB;--blue2:#1648C0;
+  --sky:#EBF4FF;--sky2:#D4E8FF;--accent:#F59E0B;--accent2:#D97706;
+  --green:#059669;--red:#DC2626;--white:#FFFFFF;
+  --gray50:#F8FAFC;--gray100:#F1F5F9;--gray200:#E2E8F0;
+  --gray400:#94A3B8;--gray600:#475569;--gray800:#1E293B;
+  --text:#0F172A;--radius:14px;
+  --shadow:0 4px 24px rgba(10,22,40,.10);--shadow-lg:0 16px 48px rgba(10,22,40,.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+/* UTILITY */
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;border-radius:10px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;transition:all .22s;white-space:nowrap}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 16px rgba(26,86,219,.3)}
+.btn-primary:hover{background:var(--blue2);transform:translateY(-2px)}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 4px 16px rgba(245,158,11,.3)}
+.btn-accent:hover{background:var(--accent2);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+.btn-outline:hover{background:var(--sky)}
+.btn-lg{padding:16px 36px;font-size:1.05rem;border-radius:12px}
+.btn-white{background:#fff;color:var(--blue);box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.btn-white:hover{background:var(--sky);transform:translateY(-2px)}
+.tag{display:inline-flex;align-items:center;gap:6px;background:var(--sky);color:var(--blue);border:1px solid var(--sky2);padding:5px 14px;border-radius:99px;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px}
+.section-title{font-family:'Fraunces',serif;font-size:clamp(2rem,4.5vw,3rem);font-weight:900;line-height:1.15;color:var(--navy);margin-bottom:16px}
+.section-sub{font-size:1.05rem;color:var(--gray600);line-height:1.7;max-width:560px}
+.text-center{text-align:center}.text-center .section-sub{margin:0 auto}
+.fade-in{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--gray200)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--blue),#3B82F6);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.nav-logo-icon svg{width:22px;height:22px;fill:white}
+.nav-logo-text{font-family:'Fraunces',serif;font-weight:900;font-size:1.25rem;color:var(--navy)}
+.nav-logo-text span{color:var(--blue)}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links a{padding:8px 14px;border-radius:8px;font-size:.9rem;font-weight:500;color:var(--gray600);transition:.2s}
+.nav-links a:hover{color:var(--navy);background:var(--gray100)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{width:24px;height:2px;background:var(--navy);border-radius:2px}
+@media(max-width:900px){
+  .nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid var(--gray200);gap:4px;box-shadow:0 8px 32px rgba(0,0,0,.1)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(170deg,var(--navy) 0%,var(--navy2) 55%,#0F2A5A 100%);display:flex;align-items:center;padding:100px 0 60px;overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.35);padding:7px 16px;border-radius:99px;color:var(--accent);font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:24px}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(2.6rem,6vw,4.2rem);font-weight:900;line-height:1.08;color:#fff;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.7);line-height:1.75;margin-bottom:36px;max-width:500px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:18px}
+.trust-item{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.6);font-size:.85rem;font-weight:500}
+.trust-item svg{width:15px;height:15px;fill:#34D399;flex-shrink:0}
+.hero-card{background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px;animation:floatCard 6s ease-in-out infinite}
+@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hc-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1)}
+.hc-icon{width:42px;height:42px;background:linear-gradient(135deg,var(--blue),#60A5FA);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.hc-title{color:#fff;font-weight:700;font-size:.95rem}
+.hc-sub{color:rgba(255,255,255,.5);font-size:.78rem}
+.hc-stat{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.hc-stat:last-of-type{border-bottom:none}
+.hc-label{color:rgba(255,255,255,.5);font-size:.82rem}
+.hc-val{font-weight:700;font-size:.88rem}
+.green{color:#34D399}.amber{color:var(--accent)}.lblue{color:#60A5FA}
+
+/* TRUST BANNER */
+.trust-banner{background:var(--sky);border-bottom:1px solid var(--sky2);padding:24px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:700px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+.trust-card{display:flex;align-items:center;gap:12px}
+.tc-icon{width:42px;height:42px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(26,86,219,.1);flex-shrink:0;font-size:1.2rem}
+.tc-label{font-weight:700;color:var(--navy);font-size:.88rem;line-height:1.3}
+.tc-sub{font-size:.74rem;color:var(--gray600)}
+
+/* SECTIONS */
+section{padding:88px 0}
+.section-alt{background:var(--gray50)}
+
+/* HOW IT WORKS */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px}
+@media(max-width:720px){.steps-grid{grid-template-columns:1fr}}
+.step-card{background:#fff;border:1px solid var(--gray200);border-radius:var(--radius);padding:28px;transition:.3s;cursor:pointer}
+.step-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--blue)}
+.step-num{width:48px;height:48px;background:linear-gradient(135deg,var(--blue),#3B82F6);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:900;font-size:1.3rem;margin-bottom:16px}
+.step-title{font-weight:700;font-size:1rem;color:var(--navy);margin-bottom:8px}
+.step-desc{font-size:.88rem;color:var(--gray600);line-height:1.7}
+.step-link{display:inline-flex;align-items:center;gap:4px;color:var(--blue);font-size:.82rem;font-weight:600;margin-top:12px}
+
+/* AIRLINES */
+.airlines-scroll{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-top:36px;max-height:460px;overflow-y:auto;padding-right:6px}
+.airlines-scroll::-webkit-scrollbar{width:4px}
+.airlines-scroll::-webkit-scrollbar-thumb{background:var(--blue);border-radius:2px}
+.airline-chip{background:#fff;border:1px solid var(--gray200);border-radius:10px;padding:11px 8px;text-align:center;font-size:.79rem;font-weight:600;color:var(--gray600);transition:.2s;cursor:pointer}
+.airline-chip:hover{border-color:var(--blue);color:var(--blue);background:var(--sky)}
+.airline-chip .iata{font-size:.67rem;color:var(--gray400);font-weight:400;margin-top:2px}
+
+/* ELIGIBILITY */
+.elig-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:44px}
+.elig-card{border-radius:var(--radius);padding:22px;border:1px solid}
+.elig-card.yes{background:#F0FDF4;border-color:#BBF7D0}
+.elig-card.no{background:#FEF2F2;border-color:#FECACA}
+.elig-icon{font-size:1.5rem;margin-bottom:10px}
+.elig-title{font-weight:700;color:var(--navy);margin-bottom:6px;font-size:.93rem}
+.elig-desc{font-size:.84rem;color:var(--gray600);line-height:1.6}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media(max-width:800px){.about-grid{grid-template-columns:1fr}}
+.about-visual{background:linear-gradient(135deg,var(--navy),#0F2A5A);border-radius:20px;padding:36px;color:#fff}
+.about-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.about-stat{background:rgba(255,255,255,.08);border-radius:10px;padding:18px;text-align:center}
+.about-stat-num{font-family:'Fraunces',serif;font-weight:900;font-size:1.9rem;color:var(--accent)}
+.about-stat-label{font-size:.78rem;color:rgba(255,255,255,.6);margin-top:3px}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:44px auto 0;display:flex;flex-direction:column;gap:10px}
+.faq-item{background:#fff;border:1px solid var(--gray200);border-radius:var(--radius);overflow:hidden}
+.faq-q{width:100%;text-align:left;padding:18px 22px;font-weight:600;font-size:.93rem;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-q svg{width:18px;height:18px;fill:var(--blue);flex-shrink:0;transition:.3s}
+.faq-item.open .faq-q svg{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 22px 18px;font-size:.88rem;color:var(--gray600);line-height:1.7}
+.faq-item.open .faq-a{display:block}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:44px}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr}}
+.ci-card{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid var(--gray200);border-radius:var(--radius);padding:18px;margin-bottom:14px}
+.ci-icon{width:40px;height:40px;background:var(--sky);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ci-title{font-weight:700;color:var(--navy);font-size:.88rem;margin-bottom:3px}
+.ci-val{font-size:.85rem;color:var(--gray600)}
+.contact-form{background:var(--gray50);border:1px solid var(--gray200);border-radius:20px;padding:28px}
+.contact-form h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--navy);margin-bottom:20px}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+@media(max-width:500px){.cf-row{grid-template-columns:1fr}}
+.cf-field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.cf-field label{font-size:.78rem;font-weight:600;color:var(--gray600);text-transform:uppercase;letter-spacing:.05em}
+.cf-field input,.cf-field select,.cf-field textarea{background:#fff;border:1.5px solid var(--gray200);border-radius:8px;padding:10px 13px;font-family:'DM Sans',sans-serif;font-size:.91rem;color:var(--text);outline:none;transition:.2s;width:100%}
+.cf-field input:focus,.cf-field select:focus,.cf-field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+.cf-field textarea{resize:vertical;min-height:90px}
+
+/* LEGAL */
+.legal-tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+.ltab{padding:8px 18px;border-radius:8px;font-size:.86rem;font-weight:600;cursor:pointer;border:1.5px solid var(--gray200);color:var(--gray600);background:#fff;transition:.2s}
+.ltab:hover,.ltab.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.legal-content{background:#fff;border:1px solid var(--gray200);border-radius:16px;padding:32px;display:none}
+.legal-content.active{display:block}
+.legal-content h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;color:var(--navy);margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--gray200)}
+.legal-content h4{font-weight:700;color:var(--navy);margin:18px 0 7px;font-size:.92rem}
+.legal-content p{font-size:.87rem;color:var(--gray600);line-height:1.75;margin-bottom:10px}
+.legal-content ul{padding-left:18px;margin-bottom:10px}
+.legal-content li{font-size:.87rem;color:var(--gray600);line-height:1.75;margin-bottom:3px}
+
+/* FOOTER */
+footer{background:var(--navy);color:#fff;padding:60px 0 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
+@media(max-width:800px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+.footer-brand p{font-size:.86rem;color:rgba(255,255,255,.5);line-height:1.7;margin:10px 0 18px;max-width:280px}
+.footer-col h4{font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;color:rgba(255,255,255,.35);margin-bottom:14px}
+.footer-col a{display:block;color:rgba(255,255,255,.6);font-size:.86rem;margin-bottom:9px;transition:.2s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.3)}
+.trust-badges{display:flex;gap:10px;flex-wrap:wrap}
+.tb{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:5px 10px;font-size:.72rem;color:rgba(255,255,255,.45);font-weight:600}
+.progress-bar{position:fixed;top:68px;left:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--accent));z-index:499;transition:width .1s linear;width:0%}
+
+/* ═══════════════════════════════════════════════
+   SHARED MODAL STYLES
+═══════════════════════════════════════════════ */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(5,10,25,.8);z-index:900;backdrop-filter:blur(6px);align-items:flex-start;justify-content:center;padding:16px;overflow-y:auto}
+.modal-overlay.open{display:flex}
+.modal-box{background:#fff;border-radius:20px;width:100%;max-width:860px;position:relative;animation:modalSlide .35s cubic-bezier(.22,1,.36,1);margin:auto}
+@keyframes modalSlide{from{transform:translateY(36px);opacity:0}to{transform:none;opacity:1}}
+.modal-header{padding:24px 28px 18px;border-bottom:1px solid var(--gray200);display:flex;justify-content:space-between;align-items:flex-start;position:sticky;top:0;background:#fff;z-index:2;border-radius:20px 20px 0 0}
+.modal-header-text h2{font-family:'Fraunces',serif;font-weight:900;font-size:1.3rem;color:var(--navy)}
+.modal-header-text p{font-size:.83rem;color:var(--gray400);margin-top:3px}
+.modal-close{background:var(--gray100);border:none;color:var(--gray600);width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:.2s;flex-shrink:0}
+.modal-close:hover{background:var(--gray200);color:var(--navy)}
+
+/* STEP INDICATOR */
+.step-indicator{display:flex;padding:16px 28px;border-bottom:1px solid var(--gray100);background:var(--gray50);gap:0;overflow-x:auto}
+.si-step{flex:1;display:flex;flex-direction:column;align-items:center;position:relative;min-width:52px}
+.si-step:not(:last-child)::after{content:'';position:absolute;top:15px;left:60%;right:-40%;height:2px;background:var(--gray200);z-index:0}
+.si-step.done:not(:last-child)::after{background:var(--blue)}
+.si-dot{width:30px;height:30px;border-radius:50%;background:#fff;border:2px solid var(--gray200);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--gray400);z-index:1;position:relative;transition:.3s}
+.si-step.active .si-dot{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 0 0 4px rgba(26,86,219,.18)}
+.si-step.done .si-dot{background:var(--blue);border-color:var(--blue);color:#fff}
+.si-label{font-size:.66rem;color:var(--gray400);margin-top:5px;font-weight:500;text-align:center;line-height:1.25}
+.si-step.active .si-label,.si-step.done .si-label{color:var(--blue);font-weight:700}
+
+/* PANES */
+.modal-body{padding:24px 28px}
+.pane{display:none}
+.pane.active{display:block;animation:paneIn .28s ease}
+@keyframes paneIn{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+.pane-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.12rem;color:var(--navy);margin-bottom:5px}
+.pane-sub{font-size:.86rem;color:var(--gray600);margin-bottom:20px;line-height:1.55}
+
+/* FORM ELEMENTS */
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:13px}
+.form-row.three{grid-template-columns:1fr 1fr 1fr}
+@media(max-width:580px){.form-row,.form-row.three{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:.77rem;font-weight:700;color:var(--gray600);text-transform:uppercase;letter-spacing:.05em}
+.field label .req{color:var(--red)}
+.field input,.field select,.field textarea{background:var(--gray50);border:1.5px solid var(--gray200);border-radius:9px;padding:11px 13px;font-family:'DM Sans',sans-serif;font-size:.91rem;color:var(--text);outline:none;transition:.2s;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+.field textarea{resize:vertical;min-height:75px}
+
+/* ─── REFUND CALCULATOR (Step 2) ─── */
+.refund-calc-wrap{background:linear-gradient(145deg,var(--navy) 0%,#122040 100%);border-radius:18px;padding:28px;margin-bottom:20px;position:relative;overflow:hidden}
+.refund-calc-wrap::before{content:'✈';position:absolute;right:24px;top:16px;font-size:5rem;opacity:.05;line-height:1}
+.rc-row{display:grid;grid-template-columns:120px 1fr;gap:12px;margin-bottom:16px}
+@media(max-width:500px){.rc-row{grid-template-columns:1fr}}
+.rc-label{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.rc-input{background:rgba(255,255,255,.09);border:1.5px solid rgba(255,255,255,.18);border-radius:9px;padding:12px 14px;color:#fff;font-family:'DM Sans',sans-serif;font-size:1rem;outline:none;width:100%;transition:.2s;font-weight:600}
+.rc-input:focus{border-color:var(--accent);background:rgba(255,255,255,.13)}
+.rc-currency{background:rgba(255,255,255,.09);border:1.5px solid rgba(255,255,255,.18);border-radius:9px;padding:12px 14px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.91rem;outline:none;width:100%;transition:.2s;cursor:pointer;appearance:none}
+.rc-currency option{background:var(--navy);color:#fff}
+.refund-result{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:22px;text-align:center;margin-top:4px;transition:.3s}
+.refund-result.has-value{background:rgba(5,150,105,.12);border-color:rgba(52,211,153,.3)}
+.rr-label{font-size:.78rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px;font-weight:700}
+.rr-amount{font-family:'Fraunces',serif;font-weight:900;font-size:3rem;color:var(--accent);line-height:1;margin-bottom:6px;transition:.3s}
+.rr-amount.active{color:#34D399}
+.rr-basis{font-size:.82rem;color:rgba(255,255,255,.5)}
+/* Breakdown bars */
+.refund-breakdown{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:20px}
+@media(max-width:480px){.refund-breakdown{grid-template-columns:1fr}}
+.rb-item{background:rgba(255,255,255,.06);border-radius:10px;padding:14px;text-align:center}
+.rb-val{font-family:'Fraunces',serif;font-weight:800;font-size:1.35rem;color:#fff}
+.rb-label{font-size:.74rem;color:rgba(255,255,255,.45);margin-top:3px}
+.rb-bar-wrap{height:4px;background:rgba(255,255,255,.1);border-radius:2px;margin-top:8px;overflow:hidden}
+.rb-bar{height:100%;border-radius:2px;transition:width .6s ease}
+.refund-note{font-size:.8rem;color:rgba(255,255,255,.45);text-align:center;margin-top:14px;line-height:1.55;font-style:italic}
+
+/* REFUND BADGE (appears inline throughout) */
+.refund-badge-inline{background:linear-gradient(135deg,rgba(52,211,153,.15),rgba(5,150,105,.1));border:1px solid rgba(52,211,153,.3);border-radius:10px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.rbi-label{font-size:.82rem;color:var(--gray600)}
+.rbi-amount{font-family:'Fraunces',serif;font-weight:900;font-size:1.2rem;color:var(--green)}
+
+/* FEE TIERS */
+.fee-tiers-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+@media(max-width:500px){.fee-tiers-row{grid-template-columns:1fr}}
+.ftier{background:var(--gray50);border:2px solid var(--gray200);border-radius:10px;padding:13px;text-align:center;transition:.2s}
+.ftier.active{border-color:var(--blue);background:var(--sky)}
+.ftier .ft-hours{font-size:.7rem;color:var(--gray400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.ftier .ft-price{font-family:'Fraunces',serif;font-weight:900;font-size:1.45rem;color:var(--navy)}
+.ftier .ft-label{font-size:.73rem;color:var(--gray600);margin-top:2px}
+
+/* pay card styles removed */
+.fee-amount-box{background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.04));border:1px solid rgba(245,158,11,.28);border-radius:10px;padding:13px 18px;text-align:center;margin-bottom:14px}
+.fee-amount-box .famt{font-family:'Fraunces',serif;font-weight:900;font-size:1.75rem;color:var(--accent)}
+.fee-amount-box p{font-size:.8rem;color:var(--gray600);margin-top:3px}
+
+/* SUMMARY TABLE */
+.summary-table{width:100%;border-collapse:collapse;margin-bottom:18px}
+.summary-table tr td{padding:9px 12px;font-size:.87rem;border-bottom:1px solid var(--gray100)}
+.summary-table tr:last-child td{border-bottom:none}
+.summary-table td:first-child{color:var(--gray400);width:42%}
+.summary-table td:last-child{color:var(--navy);font-weight:600;text-align:right}
+.summary-table .highlight-row td{background:linear-gradient(90deg,rgba(52,211,153,.06),rgba(5,150,105,.04));font-weight:700;font-size:.95rem}
+.summary-table .highlight-row td:last-child{color:var(--green);font-size:1.05rem}
+.summary-table .fee-row td{background:#FFFBEB}
+.summary-table .fee-row td:last-child{color:var(--accent);font-weight:700}
+
+/* PASSENGER BLOCK */
+.pax-section-title{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--blue);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--sky2)}
+
+/* CHECKLIST */
+.checklist{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+.checklist-item{display:flex;align-items:flex-start;gap:9px;font-size:.87rem;color:var(--gray600);line-height:1.5}
+.checklist-item::before{content:'✓';background:rgba(5,150,105,.1);color:var(--green);width:19px;height:19px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;flex-shrink:0;margin-top:1px}
+
+/* OPEN EMAIL BTN */
+.open-email-btn{width:100%;padding:15px;font-size:1rem;border-radius:12px;justify-content:center;background:linear-gradient(135deg,#059669,#047857);color:#fff;box-shadow:0 4px 20px rgba(5,150,105,.3);border:none;cursor:pointer;font-weight:700;display:flex;align-items:center;gap:10px;transition:.2s}
+.open-email-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(5,150,105,.4)}
+
+/* MODAL FOOTER */
+.modal-footer{padding:16px 28px 22px;border-top:1px solid var(--gray100);display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;border-radius:0 0 20px 20px;position:sticky;bottom:0}
+.btn-back{background:var(--gray100);color:var(--gray600);border:none;padding:10px 20px;border-radius:9px;font-weight:600;font-size:.88rem;cursor:pointer;transition:.2s}
+.btn-back:hover{background:var(--gray200);color:var(--navy)}
+.btn-next-modal{background:var(--blue);color:#fff;border:none;padding:11px 26px;border-radius:9px;font-weight:700;font-size:.92rem;cursor:pointer;display:flex;align-items:center;gap:7px;transition:.2s;box-shadow:0 4px 14px rgba(26,86,219,.3)}
+.btn-next-modal:hover{background:var(--blue2);transform:translateY(-1px)}
+
+/* ALERTS */
+.alert{border-radius:10px;padding:13px 16px;font-size:.85rem;line-height:1.55;margin-bottom:14px;display:flex;align-items:flex-start;gap:9px}
+.alert-warning{background:#FFFBEB;border:1px solid #FDE68A;color:#92400E}
+.alert-info{background:var(--sky);border:1px solid var(--sky2);color:#1E40AF}
+.alert-success{background:#F0FDF4;border:1px solid #BBF7D0;color:#065F46}
+.alert svg{width:15px;height:15px;flex-shrink:0;margin-top:2px}
+
+/* HOW IT WORKS MODAL */
+.hiw-overlay{display:none;position:fixed;inset:0;background:rgba(5,10,25,.8);z-index:900;backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:16px}
+.hiw-overlay.open{display:flex}
+.hiw-box{background:#fff;border-radius:20px;width:100%;max-width:640px;max-height:90vh;overflow-y:auto;animation:modalSlide .3s ease}
+.hiw-header{padding:22px 26px 15px;border-bottom:1px solid var(--gray200);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff;z-index:2;border-radius:20px 20px 0 0}
+.hiw-header h2{font-family:'Fraunces',serif;font-weight:900;font-size:1.2rem;color:var(--navy)}
+.hiw-body{padding:22px 26px 28px}
+.hiw-step{display:flex;gap:14px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--gray100)}
+.hiw-step:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.hiw-num{width:36px;height:36px;background:linear-gradient(135deg,var(--blue),#3B82F6);color:#fff;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:900;font-size:1.05rem;flex-shrink:0}
+.hiw-text h4{font-weight:700;color:var(--navy);margin-bottom:4px;font-size:.93rem}
+.hiw-text p{font-size:.85rem;color:var(--gray600);line-height:1.65}
+
+@keyframes heroSlide{from{transform:translateY(18px);opacity:0}to{transform:none;opacity:1}}
+.hero-content>*{animation:heroSlide .7s ease both}
+.hero-content>*:nth-child(n){animation-delay:calc(.1s * var(--i,0))}
+@media(max-width:640px){section{padding:60px 0}.hero{padding:88px 0 48px}.hero-card{display:none}}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+        <div class="nav-logo-text">Claim<span>ora</span></div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#" onclick="openHIW();return false">How It Works</a>
+        <a href="#airlines">Airlines</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <button class="btn btn-primary" onclick="openClaimModal()">Start Your Claim ✈</button>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">✈ Trusted Flight Refund Platform</div>
+        <h1>Get Your Flight Refund<br><em>Fast & Easily</em></h1>
+        <p class="hero-sub">Claimora helps passengers claim up to <strong style="color:var(--accent)">75% of their ticket price</strong> back for delays, cancellations, and travel disruptions worldwide.</p>
+        <div class="hero-actions">
+          <button class="btn btn-accent btn-lg" onclick="openClaimModal()">🎫 Start Your Claim</button>
+          <button class="btn btn-white btn-lg" onclick="openHIW()">How It Works ↗</button>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>75% Ticket Refund</div>
+          <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z"/></svg>24–48h Response</div>
+          <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z"/></svg>500+ Airlines</div>
+          <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z"/></svg>Manual Case Review</div>
+        </div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <div class="hc-header">
+            <div class="hc-icon"><svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+            <div><div class="hc-title">Active Claims</div><div class="hc-sub">Live case overview</div></div>
+          </div>
+          <div class="hc-stat"><span class="hc-label">LH 441 – 4h Delay · $420 ticket</span><span class="hc-val green">$315 Refund</span></div>
+          <div class="hc-stat"><span class="hc-label">BA 238 – Cancellation · £680 ticket</span><span class="hc-val green">£510 Refund</span></div>
+          <div class="hc-stat"><span class="hc-label">AA 101 – Denied Boarding</span><span class="hc-val amber">Under Review</span></div>
+          <div class="hc-stat"><span class="hc-label">EK 512 – Baggage Lost</span><span class="hc-val lblue">In Progress</span></div>
+          <div style="margin-top:14px;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.25);border-radius:8px;padding:10px 13px;display:flex;justify-content:space-between;align-items:center">
+            <span style="color:rgba(255,255,255,.55);font-size:.8rem">Avg. refund rate</span>
+            <span style="color:#34D399;font-weight:800;font-size:.95rem;font-family:'Fraunces',serif">75% of ticket price</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BANNER -->
+<div class="trust-banner">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-card"><div class="tc-icon">💰</div><div><div class="tc-label">75% Ticket Refund</div><div class="tc-sub">Calculated on your fare</div></div></div>
+      <div class="trust-card"><div class="tc-icon">👁️</div><div><div class="tc-label">Manual Case Review</div><div class="tc-sub">Experts on every claim</div></div></div>
+      <div class="trust-card"><div class="tc-icon">⚡</div><div><div class="tc-label">24–48h Response</div><div class="tc-sub">Fast, reliable replies</div></div></div>
+      <div class="trust-card"><div class="tc-icon">🌍</div><div><div class="tc-label">500+ Airlines</div><div class="tc-sub">All routes, all countries</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag">✈ Process</div>
+      <div class="section-title">How It Works</div>
+      <p class="section-sub">Three simple steps to claim your 75% ticket refund. Click any card for full instructions.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-in" onclick="openHIW()">
+        <div class="step-num">1</div>
+        <div class="step-title">Calculate Your Refund & Pay Fee</div>
+        <div class="step-desc">Enter your ticket price to see your 75% refund estimate. Then pay the service fee (25% of your ticket price) via bank transfer.</div>
+        <div class="step-link">See full instructions →</div>
+      </div>
+      <div class="step-card fade-in" onclick="openHIW()">
+        <div class="step-num">2</div>
+        <div class="step-title">Submit Claim via Email</div>
+        <div class="step-desc">Email all your flight details, passenger info, and payment receipt to refundfly@gmail.com in one email.</div>
+        <div class="step-link">See full instructions →</div>
+      </div>
+      <div class="step-card fade-in" onclick="openHIW()">
+        <div class="step-num">3</div>
+        <div class="step-title">Receive Your 75% Refund</div>
+        <div class="step-desc">Our team reviews your case and responds within 24–48 hours with your full eligibility and refund guidance.</div>
+        <div class="step-link">See full instructions →</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:28px">
+      <button class="btn btn-outline" onclick="openHIW()">📋 View Full Process Guide</button>
+    </div>
+  </div>
+</section>
+
+<!-- AIRLINES -->
+<section id="airlines" class="section-alt">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag">✈ Airlines</div>
+      <div class="section-title">All Major Airlines Covered</div>
+      <p class="section-sub">500+ airlines worldwide. Scroll to find yours.</p>
+    </div>
+    <div class="airlines-scroll" id="airlineGrid"></div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section>
+  <div class="container">
+    <div class="text-center">
+      <div class="tag">📋 Eligibility</div>
+      <div class="section-title">What You Can Claim For</div>
+      <p class="section-sub">All major flight disruption categories — 75% of your ticket price back.</p>
+    </div>
+    <div class="elig-grid">
+      <div class="elig-card yes"><div class="elig-icon">⏱️</div><div class="elig-title">Flight Delay (3h+)</div><div class="elig-desc">Arrived 3+ hours late? Claim 75% of your ticket price.</div></div>
+      <div class="elig-card yes"><div class="elig-icon">❌</div><div class="elig-title">Flight Cancellation</div><div class="elig-desc">Cancelled under 14 days' notice — 75% refund on your fare.</div></div>
+      <div class="elig-card yes"><div class="elig-icon">🚫</div><div class="elig-title">Denied Boarding</div><div class="elig-desc">Bumped due to overbooking? Claim 75% of your ticket cost.</div></div>
+      <div class="elig-card yes"><div class="elig-icon">🧳</div><div class="elig-title">Baggage Issues</div><div class="elig-desc">Lost, delayed or damaged luggage — 75% of declared value.</div></div>
+      <div class="elig-card yes"><div class="elig-icon">🔗</div><div class="elig-title">Missed Connection</div><div class="elig-desc">Airline fault connection miss — 75% of full itinerary value.</div></div>
+      <div class="elig-card no"><div class="elig-icon">🌪️</div><div class="elig-title">Extraordinary Circumstances</div><div class="elig-desc">Severe weather, ATC strikes, political unrest — airlines may be exempt.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-alt">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="tag">About Us</div>
+        <div class="section-title">Helping Passengers Recover What's Theirs</div>
+        <p style="color:var(--gray600);line-height:1.75;margin-bottom:16px">Claimora was built with one mission: ensure every passenger gets the compensation they're legally owed — without the complexity of going it alone. We recover <strong>75% of your ticket price</strong> for eligible disruptions.</p>
+        <p style="color:var(--gray600);line-height:1.75;margin-bottom:28px">We cover flights worldwide — EU261/2004, DOT regulations (USA), Montreal Convention for baggage, and local aviation authority standards.</p>
+        <button class="btn btn-primary" onclick="openClaimModal()">Start Your Claim Today</button>
+      </div>
+      <div class="about-visual">
+        <div style="font-family:'Fraunces',serif;font-weight:900;font-size:1.15rem">Claimora Flight Refunds</div>
+        <div style="font-size:.84rem;color:rgba(255,255,255,.5);margin:5px 0 16px">Passenger first. Always.</div>
+        <div style="font-size:.86rem;color:rgba(255,255,255,.65);line-height:1.7;font-style:italic">"Every passenger deserves fair treatment. We fight to recover 75% of your ticket price — no jargon, no complexity."</div>
+        <div class="about-stat-grid">
+          <div class="about-stat"><div class="about-stat-num">75%</div><div class="about-stat-label">Ticket Price Back</div></div>
+          <div class="about-stat"><div class="about-stat-num">24h</div><div class="about-stat-label">Avg First Response</div></div>
+          <div class="about-stat"><div class="about-stat-num">500+</div><div class="about-stat-label">Airlines Covered</div></div>
+          <div class="about-stat"><div class="about-stat-num">180+</div><div class="about-stat-label">Countries Served</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag">❓ FAQ</div>
+      <div class="section-title">Frequently Asked Questions</div>
+      <p class="section-sub">Everything you need to know before submitting your claim.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How much refund will I receive?<svg viewBox="0 0 20 20"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg></button>
+        <div class="faq-a">You are entitled to receive <strong>75% of your original ticket price</strong> for eligible claims. For example, if your ticket cost $400, your refund would be $300. You can use our built-in refund calculator in the claim form to see your exact estimate before submitting.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Who is eligible for a flight refund?<svg viewBox="0 0 20 20"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 011-1z"/></svg></button>
+        <div class="faq-a">You may be eligible if: your flight was delayed 3+ hours, cancelled with less than 14 days notice, you were denied boarding due to overbooking, or your baggage was lost/damaged. Disruptions caused by extraordinary circumstances (severe weather, strikes) generally exempt airlines.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How long does the process take?<svg viewBox="0 0 20 20"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 011-1z"/></svg></button>
+        <div class="faq-a">Our team responds within 24–48 business hours with your eligibility assessment. The full airline claims process takes 4–12 weeks depending on airline cooperation and jurisdiction.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What is the service fee?<svg viewBox="0 0 20 20"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 011-1z"/></svg></button>
+        <div class="faq-a">A one-time upfront service fee of <strong>25% of your ticket price</strong> is charged before your claim is processed. For example, a $400 ticket = $100 service fee. This is non-refundable and covers our manual review and claim guidance work.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What documents do I need?<svg viewBox="0 0 20 20"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 011-1z"/></svg></button>
+        <div class="faq-a">Required: boarding pass or e-ticket, booking confirmation, and payment receipt for the service fee. Helpful extras: airline emails about the disruption, hotel/meal receipts, any correspondence with the airline.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-alt">
+  <div class="container">
+    <div class="text-center">
+      <div class="tag">📬 Contact</div>
+      <div class="section-title">Get In Touch</div>
+      <p class="section-sub">Questions before submitting? We reply within 24–48 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="ci-card"><div class="ci-icon">📧</div><div><div class="ci-title">Email</div><div class="ci-val">refundfly@gmail.com</div></div></div>
+        <div class="ci-card"><div class="ci-icon">⏰</div><div><div class="ci-title">Response Time</div><div class="ci-val">24–48 hours on business days</div></div></div>
+        <div class="ci-card"><div class="ci-icon">💰</div><div><div class="ci-title">Refund Rate</div><div class="ci-val">75% of your ticket price</div></div></div>
+        <div class="alert alert-info"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg><span>For claim submissions, use the <strong>Start Your Claim</strong> button for the full guided process with refund calculator.</span></div>
+      </div>
+      <div class="contact-form">
+        <h3>Send a General Enquiry</h3>
+        <div class="cf-row">
+          <div class="cf-field"><label>First Name</label><input type="text" placeholder="John"></div>
+          <div class="cf-field"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+        </div>
+        <div class="cf-field"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        <div class="cf-field"><label>Subject</label><select><option>General Question</option><option>Claim Status</option><option>Refund Calculation</option><option>Eligibility Check</option><option>Other</option></select></div>
+        <div class="cf-field"><label>Message</label><textarea placeholder="Describe your question..."></textarea></div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="this.textContent='✓ Sent! We\'ll reply within 24–48h';this.style.background='var(--green)';this.disabled=true">Send Enquiry →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGAL -->
+<section id="legal">
+  <div class="container">
+    <div class="text-center"><div class="tag">⚖️ Legal</div><div class="section-title">Legal Information</div><p class="section-sub">Our policies governing Claimora Flight Refunds services.</p></div>
+    <div style="margin-top:32px">
+      <div class="legal-tabs">
+        <button class="ltab active" onclick="showLegal('tos',this)">Terms of Service</button>
+        <button class="ltab" onclick="showLegal('privacy',this)">Privacy Policy</button>
+        <button class="ltab" onclick="showLegal('refund',this)">Refund Policy</button>
+      </div>
+      <div class="legal-content active" id="legal-tos">
+        <h3>Terms of Service</h3>
+        <h4>1. Service Description</h4><p>Claimora Flight Refunds provides flight compensation claim assistance. We are not a law firm and do not provide legal advice.</p>
+        <h4>2. Refund Rate</h4><p>Eligible passengers are entitled to claim up to 75% of their original ticket price. Actual refund amounts depend on the airline, applicable law, and case circumstances.</p>
+        <h4>3. Service Fee</h4><p>A non-refundable service fee of <strong>25% of your ticket price</strong> is payable upfront before any claim is processed. This covers manual review and claim guidance regardless of outcome.</p>
+        <h4>4. Limitations</h4><p>Claimora does not guarantee successful claim outcomes. We are not responsible for airline refusals or processing delays.</p>
+      </div>
+      <div class="legal-content" id="legal-privacy">
+        <h3>Privacy Policy</h3>
+        <h4>Data We Collect</h4><p>Full name, email, phone, flight details, booking references, ticket price, and payment confirmations.</p>
+        <h4>How We Use It</h4><ul><li>To process and assess your claim</li><li>To communicate case status updates</li><li>To comply with legal obligations</li></ul>
+        <h4>Retention</h4><p>Data retained up to 7 years. Request deletion at refundfly@gmail.com.</p>
+      </div>
+      <div class="legal-content" id="legal-refund">
+        <h3>Refund Policy</h3>
+        <h4>Service Fee — Non-Refundable</h4><p>The upfront service fee is strictly non-refundable regardless of claim outcome.</p>
+        <h4>Passenger Refund — 75% Rate</h4><p>For approved claims, passengers receive 75% of their original ticket price as compensation from the airline. Claimora facilitates this process.</p>
+        <h4>When Service Fee Refunds Are NOT Given</h4><ul><li>Claim rejected due to extraordinary circumstances</li><li>Incorrect or incomplete information submitted</li><li>Change of mind after payment</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div style="width:34px;height:34px;background:linear-gradient(135deg,var(--blue),#3B82F6);border-radius:8px;display:flex;align-items:center;justify-content:center"><svg width="17" height="17" fill="white" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+          <span style="font-family:'Fraunces',serif;font-weight:900;font-size:1.05rem;color:#fff">Claimora <span style="color:#60A5FA">Flight Refunds</span></span>
+        </div>
+        <p>Helping passengers claim 75% of their ticket price back for flight delays, cancellations, and disruptions worldwide.</p>
+        <a href="mailto:refundfly@gmail.com" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.7);padding:7px 14px;border-radius:7px;font-size:.8rem;font-weight:600;display:inline-block">📧 refundfly@gmail.com</a>
+      </div>
+      <div class="footer-col"><h4>Services</h4><a href="#" onclick="openClaimModal();return false">Delay Compensation</a><a href="#" onclick="openClaimModal();return false">Cancellation Refund</a><a href="#" onclick="openClaimModal();return false">Denied Boarding</a><a href="#" onclick="openClaimModal();return false">Baggage Claims</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="#about">About Claimora</a><a href="#" onclick="openHIW();return false">How It Works</a><a href="#airlines">Airlines</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#legal">Terms of Service</a><a href="#legal" onclick="showLegal('privacy',null)">Privacy Policy</a><a href="#legal" onclick="showLegal('refund',null)">Refund Policy</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Claimora Flight Refunds. All rights reserved. Not affiliated with any airline.</p>
+      <div class="trust-badges"><div class="tb">🔒 Secure</div><div class="tb">✈ EU261</div><div class="tb">💰 75% Back</div></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════════
+     HOW IT WORKS MODAL
+══════════════════════════════════════════════ -->
+<div class="hiw-overlay" id="hiwOverlay" onclick="if(event.target===this)closeHIW()">
+  <div class="hiw-box">
+    <div class="hiw-header">
+      <h2>📋 Full Process Guide</h2>
+      <button class="modal-close" onclick="closeHIW()">✕</button>
+    </div>
+    <div class="hiw-body">
+      <div class="alert alert-info" style="margin-bottom:18px"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg><span>You are entitled to <strong>75% of your ticket price</strong> as a refund. Service fee must be paid before submitting.</span></div>
+      <div class="hiw-step"><div class="hiw-num">1</div><div class="hiw-text"><h4>Check Eligibility</h4><p>Your flight must have been delayed 3+ hours, cancelled under 14 days notice, denied boarding, or baggage lost/damaged. Extraordinary circumstances may disqualify claims.</p></div></div>
+      <div class="hiw-step"><div class="hiw-num">2</div><div class="hiw-text"><h4>Calculate Your 75% Refund</h4><p>Enter your ticket price in our refund calculator. Your refund = <strong>75% of your ticket price</strong>. Example: $400 ticket → $300 refund. Select your currency for accurate calculation.</p></div></div>
+      <div class="hiw-step"><div class="hiw-num">3</div><div class="hiw-text"><h4>Pay Service Fee</h4><p>Fee = <strong>25% of your ticket price</strong> (e.g. $400 ticket → $100 fee). Use our built-in calculator in the claim form to see your exact amount. Pay via bank transfer — our team will provide payment details upon request. Use your name + flight number as the reference and save your receipt.</p></div></div>
+      <div class="hiw-step"><div class="hiw-num">4</div><div class="hiw-text"><h4>Email Your Claim</h4><p>Email <strong>refundfly@gmail.com</strong> with: full name, email, phone, airline, flight number, date, airports, reason, ticket price. Attach: boarding pass + payment receipt (both required).</p></div></div>
+      <div class="hiw-step"><div class="hiw-num">5</div><div class="hiw-text"><h4>Await Response (24–48h)</h4><p>Our team responds within 24–48 business hours with your full eligibility verdict, confirmed refund amount (75% of your ticket), and next steps.</p></div></div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px" onclick="closeHIW();openClaimModal()">✈ Start My Claim Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     CLAIM MODAL — 6 STEPS
+     1. Flight Details
+     2. Refund Calculator  ← NEW
+     3. Service Fee
+     4. Payment Details
+     5. Passenger Details
+     6. Review & Send
+══════════════════════════════════════════════ -->
+<div class="modal-overlay" id="claimOverlay" onclick="if(event.target===this)closeClaimModal()">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-header-text">
+        <h2>✈ Submit Your Flight Refund Claim</h2>
+        <p id="modal-step-label">Step 1 of 6 — Flight Details</p>
+      </div>
+      <button class="modal-close" onclick="closeClaimModal()">✕</button>
+    </div>
+
+    <!-- STEP INDICATOR -->
+    <div class="step-indicator">
+      <div class="si-step active" id="si-1"><div class="si-dot">1</div><div class="si-label">Flight<br>Details</div></div>
+      <div class="si-step" id="si-2"><div class="si-dot">2</div><div class="si-label">Refund<br>Calc</div></div>
+      <div class="si-step" id="si-3"><div class="si-dot">3</div><div class="si-label">Service<br>Fee</div></div>
+      <div class="si-step" id="si-4"><div class="si-dot">4</div><div class="si-label">Passenger<br>Details</div></div>
+      <div class="si-step" id="si-5"><div class="si-dot">5</div><div class="si-label">Review<br>&amp; Send</div></div>
+    </div>
+
+    <div class="modal-body">
+
+      <!-- ─── PANE 1: FLIGHT DETAILS ─── -->
+      <div class="pane active" id="pane-1">
+        <div class="pane-title">✈ Your Flight Details</div>
+        <div class="pane-sub">Tell us about the disrupted flight. All fields marked <span style="color:var(--red)">*</span> are required.</div>
+        <div class="form-row">
+          <div class="field">
+            <label>Airline <span class="req">*</span></label>
+            <select id="f-airline" onchange="updateFee()">
+              <option value="">Select Airline</option>
+              <option>Aegean Airlines</option><option>Aer Lingus</option><option>Air Canada</option><option>Air China</option><option>Air France</option><option>Air India</option><option>Air New Zealand</option><option>AirAsia</option><option>AirAsia X</option><option>Alaska Airlines</option><option>All Nippon Airways (ANA)</option><option>American Airlines</option><option>Austrian Airlines</option><option>Avianca</option><option>Azerbaijan Airlines</option><option>Bangkok Airways</option><option>British Airways</option><option>Brussels Airlines</option><option>Cathay Pacific</option><option>Cebu Pacific</option><option>China Eastern</option><option>China Southern</option><option>Condor</option><option>Copa Airlines</option><option>Croatia Airlines</option><option>Delta Air Lines</option><option>easyJet</option><option>EgyptAir</option><option>El Al</option><option>Emirates</option><option>Ethiopian Airlines</option><option>Etihad Airways</option><option>Eurowings</option><option>EVA Air</option><option>Finnair</option><option>Flydubai</option><option>Flynas</option><option>Frontier Airlines</option><option>Garuda Indonesia</option><option>Gulf Air</option><option>Hainan Airlines</option><option>Hawaiian Airlines</option><option>Iberia</option><option>Icelandair</option><option>IndiGo</option><option>Japan Airlines</option><option>JetBlue</option><option>Kenya Airways</option><option>KLM</option><option>Korean Air</option><option>Kuwait Airways</option><option>LATAM Airlines</option><option>Lion Air</option><option>LOT Polish Airlines</option><option>Lufthansa</option><option>Malaysia Airlines</option><option>Middle East Airlines</option><option>Norwegian</option><option>Oman Air</option><option>Pakistan International Airlines</option><option>Philippine Airlines</option><option>Qantas</option><option>Qatar Airways</option><option>Ryanair</option><option>S7 Airlines</option><option>SAS Scandinavian</option><option>Saudia</option><option>Scoot</option><option>Singapore Airlines</option><option>South African Airways</option><option>Southwest Airlines</option><option>Spirit Airlines</option><option>SpiceJet</option><option>SriLankan Airlines</option><option>SWISS</option><option>TAP Air Portugal</option><option>Thai Airways</option><option>Transavia</option><option>TUIfly</option><option>Turkish Airlines</option><option>Ukraine International Airlines</option><option>United Airlines</option><option>Uzbekistan Airways</option><option>Vietnam Airlines</option><option>Virgin Atlantic</option><option>Virgin Australia</option><option>Vistara</option><option>Volotea</option><option>Vueling</option><option>WestJet</option><option>Wizz Air</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>Flight Number <span class="req">*</span></label><input type="text" id="f-flnum" placeholder="e.g. BA238, LH441, EK512"></div>
+        </div>
+        <div class="form-row three">
+          <div class="field"><label>Date of Flight <span class="req">*</span></label><input type="date" id="f-date"></div>
+          <div class="field"><label>Departure Airport <span class="req">*</span></label><input type="text" id="f-dep" placeholder="e.g. LHR, JFK, NBO"></div>
+          <div class="field"><label>Arrival Airport <span class="req">*</span></label><input type="text" id="f-arr" placeholder="e.g. CDG, DXB, LAX"></div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Reason for Claim <span class="req">*</span></label>
+            <select id="f-reason">
+              <option value="">Select reason</option>
+              <option>Flight Delay (3+ hours)</option>
+              <option>Flight Cancellation</option>
+              <option>Denied Boarding (overbooking)</option>
+              <option>Missed Connection (airline fault)</option>
+              <option>Baggage Lost</option>
+              <option>Baggage Damaged</option>
+              <option>Baggage Delayed (5+ days)</option>
+              <option>Downgrade in cabin class</option>
+              <option>Other disruption</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Flight Duration <span class="req">*</span></label>
+            <select id="f-duration" onchange="updateFee()">
+              <option value="">Select duration</option>
+              <option value="short">Under 3 hours (Short-haul)</option>
+              <option value="medium">3 – 6 hours (Medium-haul)</option>
+              <option value="long">Over 6 hours (Long-haul / International)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Cabin Class</label>
+            <select id="f-class">
+              <option value="">Select class</option>
+              <option>Economy</option><option>Premium Economy</option><option>Business Class</option><option>First Class</option>
+            </select>
+          </div>
+          <div class="field"><label>Booking Reference</label><input type="text" id="f-ref" placeholder="e.g. ABC123 (optional)"></div>
+        </div>
+        <div class="field"><label>What Happened? <span class="req">*</span></label><textarea id="f-notes" placeholder="Describe the disruption in detail — e.g. 'Flight delayed 5 hours. No reason given by airline. Missed connecting train. Had to pay for hotel overnight.'"></textarea></div>
+      </div>
+
+      <!-- ─── PANE 2: REFUND CALCULATOR ─── -->
+      <div class="pane" id="pane-2">
+        <div class="pane-title">💰 Refund Calculator</div>
+        <div class="pane-sub">Enter your original ticket price to see exactly how much you can claim back. Your refund is <strong>75% of your ticket price</strong>.</div>
+
+        <div class="refund-calc-wrap">
+          <div class="rc-row">
+            <div>
+              <div class="rc-label">Currency</div>
+              <select class="rc-currency" id="rc-currency" onchange="calcRefund()">
+                <option value="$" data-symbol="$">USD $</option>
+                <option value="€" data-symbol="€">EUR €</option>
+                <option value="£" data-symbol="£">GBP £</option>
+                <option value="KSh" data-symbol="KSh">KES KSh</option>
+                <option value="AED" data-symbol="AED">AED</option>
+                <option value="AUD" data-symbol="AUD">AUD</option>
+                <option value="CAD" data-symbol="CAD">CAD</option>
+                <option value="CHF" data-symbol="CHF">CHF</option>
+                <option value="CNY" data-symbol="CNY">CNY ¥</option>
+                <option value="INR" data-symbol="₹">INR ₹</option>
+                <option value="JPY" data-symbol="¥">JPY ¥</option>
+                <option value="SGD" data-symbol="S$">SGD</option>
+                <option value="ZAR" data-symbol="R">ZAR R</option>
+                <option value="NGN" data-symbol="₦">NGN ₦</option>
+                <option value="TRY" data-symbol="₺">TRY ₺</option>
+                <option value="MYR" data-symbol="RM">MYR</option>
+                <option value="THB" data-symbol="฿">THB</option>
+                <option value="BRL" data-symbol="R$">BRL</option>
+                <option value="MXN" data-symbol="$">MXN</option>
+                <option value="QAR" data-symbol="QR">QAR</option>
+              </select>
+            </div>
+            <div>
+              <div class="rc-label">Your Ticket Price <span style="color:var(--accent)">*</span></div>
+              <input class="rc-input" type="number" id="rc-price" min="0" step="0.01" placeholder="e.g. 450.00" oninput="calcRefund()">
+            </div>
+          </div>
+
+          <div class="refund-result" id="refund-result">
+            <div class="rr-label">Your Estimated Refund (75%)</div>
+            <div class="rr-amount" id="rr-amount">Enter ticket price above</div>
+            <div class="rr-basis" id="rr-basis">— of ticket price recoverable</div>
+          </div>
+
+          <div class="refund-breakdown" id="refund-breakdown" style="display:none">
+            <div class="rb-item">
+              <div class="rb-val" id="rb-ticket">—</div>
+              <div class="rb-label">Ticket Price Paid (100%)</div>
+              <div class="rb-bar-wrap"><div class="rb-bar" style="width:100%;background:rgba(255,255,255,.25)"></div></div>
+            </div>
+            <div class="rb-item">
+              <div class="rb-val" id="rb-refund">—</div>
+              <div class="rb-label">You Receive Back (75%)</div>
+              <div class="rb-bar-wrap"><div class="rb-bar" id="refund-bar" style="width:75%;background:linear-gradient(90deg,#34D399,#059669)"></div></div>
+            </div>
+            <div class="rb-item">
+              <div class="rb-val" id="rb-fee">—</div>
+              <div class="rb-label">Service Fee (25%)</div>
+              <div class="rb-bar-wrap"><div class="rb-bar" style="width:25%;background:linear-gradient(90deg,#F59E0B,#D97706)"></div></div>
+            </div>
+          </div>
+          <div class="refund-note">* This is an estimated refund based on your ticket price. Final amount subject to eligibility review and applicable law. Non-refundable service fee is separate.</div>
+        </div>
+
+        <div class="alert alert-success"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>Your refund estimate is saved and will appear in your claim email. On the next steps you'll see the service fee and payment details.</span></div>
+      </div>
+
+      <!-- ─── PANE 3: SERVICE FEE ─── -->
+      <div class="pane" id="pane-3">
+        <div class="pane-title">💳 Service Fee</div>
+        <div class="pane-sub">Your service fee is <strong>25% of your ticket price</strong>, paid upfront before we process your claim. Your refund of 75% is recovered from the airline.</div>
+
+        <!-- Refund reminder badge -->
+        <div id="refund-badge-3" class="refund-badge-inline" style="display:none">
+          <span class="rbi-label">💰 Your 75% refund (from airline)</span>
+          <span class="rbi-amount" id="rbi-amount-3">—</span>
+        </div>
+
+        <!-- Live fee + refund breakdown card -->
+        <div style="background:linear-gradient(145deg,var(--navy),#122040);border-radius:16px;padding:24px;margin-bottom:16px">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;text-align:center">
+            <div style="background:rgba(255,255,255,.06);border-radius:10px;padding:16px">
+              <div style="font-size:.72rem;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:6px">Ticket Price</div>
+              <div style="font-family:'Fraunces',serif;font-weight:900;font-size:1.3rem;color:#fff" id="fee-ticket-display">—</div>
+              <div style="font-size:.72rem;color:rgba(255,255,255,.35);margin-top:3px">100%</div>
+            </div>
+            <div style="background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.25);border-radius:10px;padding:16px">
+              <div style="font-size:.72rem;color:rgba(245,158,11,.7);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:6px">Service Fee</div>
+              <div class="famt" id="fee-amount-display" style="font-size:1.3rem">—</div>
+              <div style="font-size:.72rem;color:rgba(255,255,255,.35);margin-top:3px">25% of ticket</div>
+            </div>
+            <div style="background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:10px;padding:16px">
+              <div style="font-size:.72rem;color:rgba(52,211,153,.7);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:6px">Your Refund</div>
+              <div style="font-family:'Fraunces',serif;font-weight:900;font-size:1.3rem;color:#34D399" id="fee-refund-display">—</div>
+              <div style="font-size:.72rem;color:rgba(255,255,255,.35);margin-top:3px">75% of ticket</div>
+            </div>
+          </div>
+          <div style="margin-top:16px">
+            <div style="display:flex;justify-content:space-between;font-size:.74rem;color:rgba(255,255,255,.35);margin-bottom:5px"><span>0%</span><span>25% fee</span><span>100% ticket</span></div>
+            <div style="height:8px;background:rgba(255,255,255,.08);border-radius:4px;overflow:hidden;display:flex">
+              <div style="width:25%;background:linear-gradient(90deg,#F59E0B,#D97706);border-radius:4px 0 0 4px"></div>
+              <div style="width:75%;background:linear-gradient(90deg,#34D399,#059669);border-radius:0 4px 4px 0"></div>
+            </div>
+            <div style="display:flex;gap:16px;margin-top:8px;flex-wrap:wrap">
+              <span style="font-size:.74rem;color:rgba(255,255,255,.4);display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#F59E0B;display:inline-block"></span>Service fee you pay (25%)</span>
+              <span style="font-size:.74rem;color:rgba(255,255,255,.4);display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#34D399;display:inline-block"></span>Refund you receive (75%)</span>
+            </div>
+          </div>
+          <div style="font-size:.76rem;color:rgba(255,255,255,.35);margin-top:10px;text-align:center" id="fee-basis-text">Enter ticket price in Step 2 to see your exact fee</div>
+        </div>
+
+        <!-- Fee badge -->
+        <div id="fee-badge-3" class="fee-amount-box" style="display:none;margin-bottom:14px">
+          <div style="font-size:.74rem;color:var(--gray600);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">Service Fee to Pay (25%)</div>
+          <div class="famt" id="fee-label-3">—</div>
+          <p>Transfer this amount via bank transfer before submitting</p>
+        </div>
+
+        <div class="alert alert-warning"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><strong>Non-refundable:</strong> The 25% service fee covers our manual review and claim guidance work regardless of outcome.</div>
+        <div class="alert alert-info"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>Next screen shows bank details to pay. After paying, attach your receipt to the claim email.</div>
+      </div>
+
+
+
+      <!-- ─── PANE 4: PASSENGER DETAILS ─── -->
+      <div class="pane" id="pane-4">
+        <div class="pane-title">👤 Passenger Details</div>
+        <div class="pane-sub">Enter your personal details exactly as they appear on your travel document.</div>
+
+        <div id="refund-badge-4" class="refund-badge-inline" style="display:none">
+          <span class="rbi-label">💰 Your 75% refund estimate</span>
+          <span class="rbi-amount" id="rbi-amount-4">—</span>
+        </div>
+
+        <div class="pax-section-title">Personal Information</div>
+        <div class="form-row">
+          <div class="field"><label>Full Legal Name <span class="req">*</span></label><input type="text" id="p-name" placeholder="As on passport / national ID"></div>
+          <div class="field"><label>Email Address <span class="req">*</span></label><input type="email" id="p-email" placeholder="your@email.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Phone Number</label><input type="tel" id="p-phone" placeholder="+1 555 000 0000 (optional)"></div>
+          <div class="field"><label>Date of Birth</label><input type="date" id="p-dob"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Nationality / Passport Country <span class="req">*</span></label><input type="text" id="p-nationality" placeholder="e.g. British, American, Kenyan"></div>
+          <div class="field"><label>Passport / ID Number</label><input type="text" id="p-passport" placeholder="Optional but recommended"></div>
+        </div>
+
+        <div class="pax-section-title" style="margin-top:4px">Address & Location</div>
+        <div class="form-row">
+          <div class="field"><label>Country of Residence <span class="req">*</span></label>
+            <select id="p-country">
+              <option value="">Select country</option>
+              <option>United Kingdom</option><option>United States</option><option>Germany</option><option>France</option><option>Netherlands</option><option>Spain</option><option>Italy</option><option>Belgium</option><option>Switzerland</option><option>Austria</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Australia</option><option>Canada</option><option>New Zealand</option><option>Kenya</option><option>South Africa</option><option>Nigeria</option><option>Ghana</option><option>Ethiopia</option><option>Tanzania</option><option>Uganda</option><option>India</option><option>Pakistan</option><option>Bangladesh</option><option>UAE</option><option>Saudi Arabia</option><option>Qatar</option><option>Kuwait</option><option>Singapore</option><option>Malaysia</option><option>Japan</option><option>South Korea</option><option>China</option><option>Brazil</option><option>Mexico</option><option>Argentina</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>City</label><input type="text" id="p-city" placeholder="Your city (optional)"></div>
+        </div>
+
+        <div class="pax-section-title" style="margin-top:4px">Additional Claim Info</div>
+        <div class="form-row">
+          <div class="field"><label>Delay / Disruption Duration</label>
+            <select id="p-delay">
+              <option value="">Select if applicable</option>
+              <option>3–4 hours delay</option><option>4–6 hours delay</option><option>6–12 hours delay</option><option>12–24 hours delay</option><option>Over 24 hours delay</option><option>Full cancellation</option><option>Denied boarding</option><option>Baggage issue</option>
+            </select>
+          </div>
+          <div class="field"><label>Have Travel Insurance?</label>
+            <select id="p-insurance"><option value="">Select...</option><option>Yes</option><option>No</option><option>Not sure</option></select>
+          </div>
+        </div>
+        <div class="field"><label>How did you hear about Claimora?</label>
+          <select id="p-source"><option value="">Select...</option><option>Google Search</option><option>Friend / Family</option><option>Social Media</option><option>Advertisement</option><option>Other</option></select>
+        </div>
+
+        <div class="alert alert-info" style="margin-top:4px"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>Your data is confidential and used only to process your claim. See our Privacy Policy.</div>
+      </div>
+
+      <!-- ─── PANE 5: REVIEW & SEND ─── -->
+      <div class="pane" id="pane-5">
+        <div class="pane-title">📋 Review &amp; Send Your Claim</div>
+        <div class="pane-sub">Check all details below, then tap the button to open a pre-filled email. Attach your boarding pass and payment receipt before sending.</div>
+
+        <!-- REFUND HIGHLIGHT -->
+        <div id="refund-summary-box" style="background:linear-gradient(135deg,var(--navy),#122040);border-radius:14px;padding:20px 24px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+          <div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;font-weight:700;margin-bottom:4px">Your Estimated Refund</div>
+            <div style="font-family:'Fraunces',serif;font-weight:900;font-size:2.2rem;color:#34D399" id="s-refund-big">—</div>
+            <div style="font-size:.8rem;color:rgba(255,255,255,.45);margin-top:2px">75% of your ticket price</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.75rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;font-weight:700;margin-bottom:4px">Service Fee Paid</div>
+            <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;color:var(--accent)" id="s-fee-box">—</div>
+            <div style="font-size:.78rem;color:rgba(255,255,255,.35);margin-top:2px">One-time, non-refundable</div>
+          </div>
+        </div>
+
+        <table class="summary-table">
+          <tr><td colspan="2" style="font-weight:700;color:var(--blue);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;background:var(--sky);padding:8px 12px">✈ Flight Information</td></tr>
+          <tr><td>Airline</td><td id="s-airline">—</td></tr>
+          <tr><td>Flight Number</td><td id="s-flnum">—</td></tr>
+          <tr><td>Date of Flight</td><td id="s-date">—</td></tr>
+          <tr><td>Route</td><td id="s-route">—</td></tr>
+          <tr><td>Cabin Class</td><td id="s-class">—</td></tr>
+          <tr><td>Reason for Claim</td><td id="s-reason">—</td></tr>
+          <tr><td>Flight Duration</td><td id="s-duration">—</td></tr>
+          <tr><td colspan="2" style="font-weight:700;color:var(--blue);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;background:var(--sky);padding:8px 12px">👤 Passenger Information</td></tr>
+          <tr><td>Full Name</td><td id="s-name">—</td></tr>
+          <tr><td>Email</td><td id="s-email">—</td></tr>
+          <tr><td>Phone</td><td id="s-phone">—</td></tr>
+          <tr><td>Nationality</td><td id="s-nationality">—</td></tr>
+          <tr><td>Country</td><td id="s-country">—</td></tr>
+          <tr><td>Passport / ID</td><td id="s-passport">—</td></tr>
+          <tr><td colspan="2" style="font-weight:700;color:var(--blue);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;background:var(--sky);padding:8px 12px">💰 Financial Summary</td></tr>
+          <tr><td>Ticket Price Paid</td><td id="s-ticket">—</td></tr>
+          <tr class="highlight-row"><td>Estimated Refund (75%)</td><td id="s-refund">—</td></tr>
+          <tr class="fee-row"><td>Service Fee (upfront)</td><td id="s-fee">—</td></tr>
+        </table>
+
+        <div class="alert alert-warning" style="margin-bottom:12px"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><div><strong>Before sending, attach this file to the email:</strong><br>1. ✅ Your boarding pass or e-ticket (PDF or photo)</div></div>
+
+        <div class="checklist">
+          <div class="checklist-item">All flight details are correct</div>
+          <div class="checklist-item">Refund amount calculated and shown above</div>
+          <div class="checklist-item">Service fee (25%) is noted and ready to be paid</div>
+          <div class="checklist-item">Boarding pass / e-ticket is ready to attach</div>
+        </div>
+
+        <div style="background:var(--gray50);border:1px solid var(--gray200);border-radius:9px;padding:12px 16px;font-size:.83rem;color:var(--gray600);margin-bottom:14px">
+          <strong style="color:var(--navy)">📧 Sending to:</strong> refundfly@gmail.com &nbsp;|&nbsp;
+          <strong style="color:var(--navy)">Subject:</strong> <span id="email-subject-preview">Flight Refund Claim — …</span>
+        </div>
+
+        <button class="open-email-btn" onclick="openEmailClient()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Open Email with Pre-filled Claim Details
+        </button>
+        <p style="text-align:center;font-size:.76rem;color:var(--gray400);margin-top:8px">Opens your email client. Attach boarding pass + payment receipt, then Send.</p>
+      </div>
+
+    </div><!-- /modal-body -->
+
+    <div class="modal-footer">
+      <button class="btn-back" id="modal-back-btn" onclick="modalPrev()" style="display:none">← Back</button>
+      <div style="font-size:.78rem;color:var(--gray400)" id="modal-step-counter">Step 1 of 6</div>
+      <button class="btn-next-modal" id="modal-next-btn" onclick="modalNext()">Continue →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ═══ AIRLINES ═══ */
+const airlines=[{n:"Aegean Airlines",c:"A3"},{n:"Aer Lingus",c:"EI"},{n:"Aerolíneas Argentinas",c:"AR"},{n:"Aeromexico",c:"AM"},{n:"Air Arabia",c:"G9"},{n:"Air Astana",c:"KC"},{n:"Air Baltic",c:"BT"},{n:"Air Canada",c:"AC"},{n:"Air China",c:"CA"},{n:"Air France",c:"AF"},{n:"Air India",c:"AI"},{n:"Air Mauritius",c:"MK"},{n:"Air New Zealand",c:"NZ"},{n:"Air Tanzania",c:"TC"},{n:"AirAsia",c:"AK"},{n:"AirAsia X",c:"D7"},{n:"Alaska Airlines",c:"AS"},{n:"All Nippon Airways",c:"NH"},{n:"American Airlines",c:"AA"},{n:"SWISS",c:"LX"},{n:"Austrian Airlines",c:"OS"},{n:"Avianca",c:"AV"},{n:"Azerbaijan Airlines",c:"J2"},{n:"Bangkok Airways",c:"PG"},{n:"British Airways",c:"BA"},{n:"Brussels Airlines",c:"SN"},{n:"Cathay Pacific",c:"CX"},{n:"Cebu Pacific",c:"5J"},{n:"China Eastern",c:"MU"},{n:"China Southern",c:"CZ"},{n:"Condor",c:"DE"},{n:"Copa Airlines",c:"CM"},{n:"Croatia Airlines",c:"OU"},{n:"Delta Air Lines",c:"DL"},{n:"easyJet",c:"U2"},{n:"EgyptAir",c:"MS"},{n:"El Al",c:"LY"},{n:"Emirates",c:"EK"},{n:"Ethiopian Airlines",c:"ET"},{n:"Etihad Airways",c:"EY"},{n:"Eurowings",c:"EW"},{n:"EVA Air",c:"BR"},{n:"Finnair",c:"AY"},{n:"Flydubai",c:"FZ"},{n:"Flynas",c:"XY"},{n:"Frontier Airlines",c:"F9"},{n:"Garuda Indonesia",c:"GA"},{n:"Gulf Air",c:"GF"},{n:"Hainan Airlines",c:"HU"},{n:"Hawaiian Airlines",c:"HA"},{n:"Iberia",c:"IB"},{n:"Icelandair",c:"FI"},{n:"IndiGo",c:"6E"},{n:"Japan Airlines",c:"JL"},{n:"JetBlue",c:"B6"},{n:"Kenya Airways",c:"KQ"},{n:"KLM",c:"KL"},{n:"Korean Air",c:"KE"},{n:"Kuwait Airways",c:"KU"},{n:"LATAM Airlines",c:"LA"},{n:"Lion Air",c:"JT"},{n:"LOT Polish Airlines",c:"LO"},{n:"Lufthansa",c:"LH"},{n:"Malaysia Airlines",c:"MH"},{n:"Middle East Airlines",c:"ME"},{n:"Norwegian",c:"DY"},{n:"Oman Air",c:"WY"},{n:"Pakistan International",c:"PK"},{n:"Philippine Airlines",c:"PR"},{n:"Qantas",c:"QF"},{n:"Qatar Airways",c:"QR"},{n:"Ryanair",c:"FR"},{n:"S7 Airlines",c:"S7"},{n:"SAS Scandinavian",c:"SK"},{n:"Saudia",c:"SV"},{n:"Scoot",c:"TR"},{n:"Singapore Airlines",c:"SQ"},{n:"South African Airways",c:"SA"},{n:"Southwest Airlines",c:"WN"},{n:"Spirit Airlines",c:"NK"},{n:"SpiceJet",c:"SG"},{n:"SriLankan Airlines",c:"UL"},{n:"TAP Air Portugal",c:"TP"},{n:"Thai Airways",c:"TG"},{n:"Transavia",c:"HV"},{n:"TUIfly",c:"X3"},{n:"Turkish Airlines",c:"TK"},{n:"Ukraine International",c:"PS"},{n:"United Airlines",c:"UA"},{n:"Uzbekistan Airways",c:"HY"},{n:"Vietnam Airlines",c:"VN"},{n:"Virgin Atlantic",c:"VS"},{n:"Virgin Australia",c:"VA"},{n:"Vistara",c:"UK"},{n:"Volotea",c:"V7"},{n:"Vueling",c:"VY"},{n:"WestJet",c:"WS"},{n:"Wizz Air",c:"W6"},{n:"Xiamen Airlines",c:"MF"}];
+(()=>{const g=document.getElementById('airlineGrid');airlines.sort((a,b)=>a.n.localeCompare(b.n)).forEach(a=>{const d=document.createElement('div');d.className='airline-chip';d.innerHTML=`${a.n}<div class="iata">${a.c}</div>`;g.appendChild(d)})})();
+
+/* ═══ NAV ═══ */
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
+document.addEventListener('click',e=>{if(!e.target.closest('nav'))document.getElementById('navLinks').classList.remove('open')});
+window.addEventListener('scroll',()=>{const t=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('progressBar').style.width=(window.scrollY/t*100)+'%'});
+
+/* ═══ FADE IN ═══ */
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+
+/* ═══ FAQ ═══ */
+function toggleFaq(btn){const i=btn.closest('.faq-item'),o=i.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(x=>x.classList.remove('open'));if(!o)i.classList.add('open')}
+
+/* ═══ LEGAL ═══ */
+function showLegal(tab,btn){
+  document.querySelectorAll('.legal-content').forEach(c=>c.classList.remove('active'));
+  document.querySelectorAll('.ltab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('legal-'+tab).classList.add('active');
+  if(btn)btn.classList.add('active');
+  else document.querySelectorAll('.ltab')[{tos:0,privacy:1,refund:2}[tab]]?.classList.add('active');
+}
+
+/* ═══ HOW IT WORKS MODAL ═══ */
+function openHIW(){document.getElementById('hiwOverlay').classList.add('open');document.body.style.overflow='hidden'}
+function closeHIW(){document.getElementById('hiwOverlay').classList.remove('open');document.body.style.overflow=''}
+
+/* ═══ CLAIM MODAL ═══ */
+let currentStep=1;
+const TOTAL_STEPS=5;
+
+/* Helper: get current ticket price & currency */
+function getTicketInfo(){
+  const price=parseFloat(document.getElementById('rc-price').value)||0;
+  const cur=document.getElementById('rc-currency').value||'$';
+  return {price,cur};
+}
+/* Format a number with currency prefix */
+function fmt(cur,n){return cur+' '+n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+
+/* Get dynamic fee label from duration */
+function getDurLabel(){
+  const dur=document.getElementById('f-duration').value;
+  const map={short:'Under 3 hours (Short-haul)',medium:'3–6 hours (Medium-haul)',long:'Over 6 hours (Long-haul)'};
+  return map[dur]||'—';
+}
+
+function openClaimModal(){document.getElementById('claimOverlay').classList.add('open');document.body.style.overflow='hidden';goToStep(1)}
+function closeClaimModal(){document.getElementById('claimOverlay').classList.remove('open');document.body.style.overflow=''}
+
+/* ── updateFee: now driven entirely by ticket price ── */
+function updateFee(){
+  // fee = 25% of ticket price — recomputed every time price or currency changes
+  calcRefund();
+}
+
+/* ── REFUND CALCULATOR: refund=75%, service fee=25% ── */
+function calcRefund(){
+  const {price,cur}=getTicketInfo();
+  const res=document.getElementById('refund-result');
+  const amtEl=document.getElementById('rr-amount');
+  const basisEl=document.getElementById('rr-basis');
+  const breakdown=document.getElementById('refund-breakdown');
+
+  if(price>0){
+    const refundAmt=price*0.75;
+    const feeAmt=price*0.25;
+    const refundFmt=fmt(cur,refundAmt);
+    const feeFmt=fmt(cur,feeAmt);
+    const ticketFmt=fmt(cur,price);
+
+    /* Step 2 — result box */
+    amtEl.textContent=refundFmt;
+    amtEl.className='rr-amount active';
+    basisEl.textContent='75% of '+ticketFmt+' ticket price';
+    res.classList.add('has-value');
+
+    /* Step 2 — breakdown bars */
+    document.getElementById('rb-ticket').textContent=ticketFmt;
+    document.getElementById('rb-refund').textContent=refundFmt;
+    const rbFee=document.getElementById('rb-fee');if(rbFee)rbFee.textContent=feeFmt;
+    breakdown.style.display='grid';
+
+    /* Step 3 — service fee display */
+    const feeDisp=document.getElementById('fee-amount-display');
+    const feeBasis=document.getElementById('fee-basis-text');
+    if(feeDisp){feeDisp.textContent=feeFmt}
+    if(feeBasis){feeBasis.textContent='25% of '+ticketFmt+' = your service fee | 75% = your refund'}
+    const ftd=document.getElementById('fee-ticket-display');if(ftd)ftd.textContent=ticketFmt;
+    const frd=document.getElementById('fee-refund-display');if(frd)frd.textContent=refundFmt;
+    /* Show fee badge */
+    const fb3=document.getElementById('fee-badge-3');if(fb3)fb3.style.display='block';
+    const fl3=document.getElementById('fee-label-3');if(fl3)fl3.textContent=feeFmt;
+
+    /* Step 4 — payment fee display */
+    const feeDisp2=document.getElementById('fee-amount-display-2');
+    const feeBasis2=document.getElementById('fee-basis-text-2');
+    if(feeDisp2){feeDisp2.textContent=feeFmt}
+    if(feeBasis2){feeBasis2.textContent='25% of '+ticketFmt+' (service fee)'}
+
+    /* Refund badges on steps 3 and 4 */
+    ['3','4'].forEach(n=>{
+      const badge=document.getElementById('refund-badge-'+n);
+      const amountEl=document.getElementById('rbi-amount-'+n);
+      if(badge&&amountEl){badge.style.display='flex';amountEl.textContent=refundFmt}
+    });
+
+    /* Fee badge on step 3 */
+    const feeBadge=document.getElementById('fee-badge-3');
+    const feeLabel3=document.getElementById('fee-label-3');
+    if(feeBadge&&feeLabel3){feeBadge.style.display='flex';feeLabel3.textContent=feeFmt}
+
+  } else {
+    amtEl.textContent='Enter ticket price above';
+    amtEl.className='rr-amount';
+    basisEl.textContent='— of ticket price recoverable';
+    res.classList.remove('has-value');
+    breakdown.style.display='none';
+    ['fee-amount-display','fee-amount-display-2'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent='—'});
+    ['fee-basis-text','fee-basis-text-2'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent='Enter ticket price in Step 2'});
+    ['3','4'].forEach(n=>{const b=document.getElementById('refund-badge-'+n);if(b)b.style.display='none'});
+    const fb=document.getElementById('fee-badge-3');if(fb)fb.style.display='none';
+  }
+}
+
+/* ── STEP NAVIGATION ── */
+function goToStep(n){
+  currentStep=n;
+  for(let i=1;i<=TOTAL_STEPS;i++){
+    document.getElementById('pane-'+i).classList.toggle('active',i===n);
+    const s=document.getElementById('si-'+i);
+    s.className='si-step'+(i===n?' active':(i<n?' done':''));
+  }
+  document.getElementById('modal-back-btn').style.display=n>1?'block':'none';
+  const nb=document.getElementById('modal-next-btn');
+  if(n===TOTAL_STEPS){nb.style.display='none'}
+  else{nb.style.display='flex';nb.textContent=n===4?'Review My Claim →':'Continue →'}
+  const labels=['Flight Details','Refund Calculator','Service Fee','Passenger Details','Review & Send'];
+  document.getElementById('modal-step-label').textContent=`Step ${n} of ${TOTAL_STEPS} — ${labels[n-1]}`;
+  document.getElementById('modal-step-counter').textContent=`Step ${n} of ${TOTAL_STEPS}`;
+  if(n===TOTAL_STEPS)buildSummary();
+  // Scroll modal to top
+  const overlay=document.getElementById('claimOverlay');
+  overlay.scrollTop=0;
+  document.querySelector('.modal-box').scrollTop=0;
+}
+
+/* ── VALIDATE ── */
+function validateStep(){
+  const V=(id)=>document.getElementById(id).value.trim();
+  if(currentStep===1){
+    if(!V('f-airline')){alert('Please select an airline.');return false}
+    if(!V('f-flnum')){alert('Please enter your flight number.');return false}
+    if(!document.getElementById('f-date').value){alert('Please select the date of your flight.');return false}
+    if(!V('f-dep')){alert('Please enter the departure airport.');return false}
+    if(!V('f-arr')){alert('Please enter the arrival airport.');return false}
+    if(!document.getElementById('f-reason').value){alert('Please select a reason for your claim.');return false}
+    if(!document.getElementById('f-duration').value){alert('Please select the flight duration.');return false}
+    if(!V('f-notes')){alert('Please describe what happened during your flight disruption.');return false}
+    updateFee();
+  }
+  if(currentStep===2){
+    const price=parseFloat(document.getElementById('rc-price').value)||0;
+    if(!price||price<=0){alert('Please enter your ticket price to calculate your refund.');return false}
+  }
+  if(currentStep===4){
+    if(!document.getElementById('p-name').value.trim()){alert('Please enter your full legal name.');return false}
+    const email=document.getElementById('p-email').value.trim();
+    if(!email||!email.includes('@')||!email.includes('.')){alert('Please enter a valid email address.');return false}
+    if(!document.getElementById('p-nationality').value.trim()){alert('Please enter your nationality.');return false}
+    if(!document.getElementById('p-country').value){alert('Please select your country of residence.');return false}
+  }
+  return true;
+}
+
+function modalNext(){if(validateStep())goToStep(currentStep+1)}
+function modalPrev(){goToStep(currentStep-1)}
+
+/* ── BUILD SUMMARY ── */
+function buildSummary(){
+  const g=(id)=>document.getElementById(id).value||'';
+  const {price,cur}=getTicketInfo();
+  const refundAmt=price>0?price*0.75:null;
+  const feeAmt=price>0?price*0.25:null;
+  const refundFmt=refundAmt?fmt(cur,refundAmt):'—';
+  const feeFmt=feeAmt?fmt(cur,feeAmt):'—';
+  const ticketFmt=price>0?fmt(cur,price):'—';
+  const s=(id,val)=>document.getElementById(id).textContent=val;
+  s('s-airline',g('f-airline'));
+  s('s-flnum',g('f-flnum'));
+  s('s-date',g('f-date'));
+  s('s-route',g('f-dep')+' → '+g('f-arr'));
+  s('s-class',g('f-class')||'Not specified');
+  s('s-reason',g('f-reason'));
+  s('s-duration',getDurLabel());
+  s('s-name',g('p-name'));
+  s('s-email',g('p-email'));
+  s('s-phone',g('p-phone')||'Not provided');
+  s('s-nationality',g('p-nationality')||'—');
+  s('s-country',g('p-country'));
+  s('s-passport',g('p-passport')||'Not provided');
+  s('s-ticket',ticketFmt);
+  s('s-refund',refundFmt);
+  s('s-fee',feeFmt);
+  s('s-refund-big',refundFmt);
+  s('s-fee-box',feeFmt);
+  document.getElementById('email-subject-preview').textContent=`Flight Refund — ${g('f-airline')} ${g('f-flnum')} — ${g('f-date')}`;
+}
+
+/* ── OPEN EMAIL CLIENT ── */
+function openEmailClient(){
+  const g=(id)=>document.getElementById(id).value||'';
+  const {price,cur}=getTicketInfo();
+  const refundStr=price>0?fmt(cur,price*0.75):'Not calculated';
+  const feeStr=price>0?fmt(cur,price*0.25):'Not calculated';
+  const ticketStr=price>0?fmt(cur,price):'Not provided';
+  const subj=encodeURIComponent(`Flight Refund Claim — ${g('f-airline')} ${g('f-flnum')} — ${g('f-date')}`);
+  const body=encodeURIComponent(
+`✈ CLAIMORA FLIGHT REFUND CLAIM SUBMISSION
+==========================================
+
+FLIGHT DETAILS
+--------------
+Airline:                ${g('f-airline')}
+Flight Number:          ${g('f-flnum')}
+Date of Flight:         ${g('f-date')}
+Departure Airport:      ${g('f-dep')}
+Arrival Airport:        ${g('f-arr')}
+Cabin Class:            ${g('f-class')||'Not specified'}
+Booking Reference:      ${g('f-ref')||'Not provided'}
+Reason for Claim:       ${g('f-reason')}
+Flight Duration:        ${getDurLabel()}
+Disruption Duration:    ${g('p-delay')||'Not specified'}
+
+FINANCIAL DETAILS
+-----------------
+Ticket Price Paid:      ${ticketStr}
+Service Fee (25%):      ${feeStr}   ← to be paid before case processing
+Refund Amount (75%):    ${refundStr} ← to be recovered from airline
+
+PASSENGER DETAILS
+-----------------
+Full Legal Name:        ${g('p-name')}
+Email Address:          ${g('p-email')}
+Phone Number:           ${g('p-phone')||'Not provided'}
+Date of Birth:          ${g('p-dob')||'Not provided'}
+Nationality:            ${g('p-nationality')||'Not provided'}
+Passport / ID No.:      ${g('p-passport')||'Not provided'}
+Country of Residence:   ${g('p-country')}
+City:                   ${g('p-city')||'Not provided'}
+Travel Insurance:       ${g('p-insurance')||'Not specified'}
+
+DESCRIPTION OF DISRUPTION
+--------------------------
+${g('f-notes')||'No additional notes provided.'}
+
+ATTACHED DOCUMENTS (please attach before sending):
+  ✅ 1. Boarding pass or e-ticket (PDF or photo)
+
+==========================================
+Submitted via Claimora Flight Refunds
+Contact: refundfly@gmail.com | Response within 24–48 hours`
+  );
+  window.open(`mailto:refundfly@gmail.com?subject=${subj}&body=${body}`);
+}
+</script>
+</body>
+</html>

@@ -1,11 +1,6 @@
 User-agent: *
 Allow: /
 
-# Block internal paths
-Disallow: /admin/
-Disallow: /api/
-Disallow: /claim-confirm/
-Disallow: /dashboard/
 
 # Crawl delay
 Crawl-delay: 10
